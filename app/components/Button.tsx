@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
-const Button = ({ children, className, onClick, ...props }) => {
+interface ButtonProps {
+  children: ReactNode;
+  className?: string;
+  onClick?: () => void;
+}
+const Button = ({ children, className, onClick, ...props } : ButtonProps) => {
   return (
     <div className={`flex flex-col items-center justify-center gap-2 ${className}`}>
       <button

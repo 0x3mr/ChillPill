@@ -8,7 +8,7 @@ export default function Home() {
   const sounds = Object.values(sound);
 
   // Function to play sound
-  const playSound = (soundPath) => {
+  const playSound = (soundPath: string | undefined) => {
     const audio = new Audio(soundPath);
     audio.play();
   };
