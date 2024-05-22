@@ -1,7 +1,6 @@
 #!/usr/bin/bash
 
-bash
-cd ChillPill
+cd /home/ubuntu/ChillPill
 git pull
 npm --prefix /home/ubuntu/ChillPill run build
 pm2 restart chillpill

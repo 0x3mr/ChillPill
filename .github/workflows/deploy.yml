@@ -13,12 +13,9 @@ jobs:
 
     - name: Deploy to Server
       env:
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        SSH_HOST: web-02.fluffycookie.tech
-        SSH_USER: ubuntu
-        SSH_PORT: 22
+        DEPLOY_SECRET_KEY: ${{ secrets.DEPLOY_SECRET_KEY }}
       run: |
-        mkdir -p ~/.ssh
-        echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
-        ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa $SSH_USER@$SSH_HOST "/home/ubuntu/ChillPill/pull_run.sh"
+        curl -X POST \
+          -H "Content-Type: application/json" \
+          -H "x-deploy-secret: $DEPLOY_SECRET_KEY" \
+          http://web-02.fluffycookie.tech/chillpill/api/deploy
