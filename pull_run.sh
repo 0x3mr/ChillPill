@@ -2,5 +2,5 @@
 
 cd ChillPill
 git pull
-npm run build
+npm --prefix /home/ubuntu/ChillPill run build
 pm2 restart chillpill
