@@ -32,7 +32,7 @@ def get_sounds():
     for x in l:
         n = x.split(".")[0]
         if n in sounds: continue
-        sounds[n] = {"name": n, "path": "sounds/" + x, "desc": "", "category": ""}
+        sounds[n] = {"name": n, "path": "sounds/" + x, "desc": "unknown", "category": "sound"}
 
 
 def check_save_name():

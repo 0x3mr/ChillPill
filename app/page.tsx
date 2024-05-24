@@ -6,11 +6,28 @@ import sound from '../sounds_dev.json';
 
 export default function Home() {
   const sounds = Object.values(sound);
+  let playin: never[] = [];
 
   // Function to play sound
   const playSound = (soundPath: string | undefined) => {
+    if (!soundPath) {
+      console.error("Invalid soundPath:", soundPath);
+      return;
+    }
+    if (playin[soundPath] !== undefined){
+      if (playin[soundPath][0] == true){
+      const audio = playin[soundPath][1];
+      audio.pause();
+      delete playin[soundPath];
+      console.log("Deleted", soundPath)
+      return;}
+    }
     const audio = new Audio(soundPath);
+    
     audio.play();
+    audio.loop = true;
+    playin[soundPath] = [true, audio];
+    console.log(playin);
   };
 
   return (
@@ -37,6 +54,7 @@ export default function Home() {
                 <Button
                   key={soundItem.name}
                   onClick={() => playSound(soundItem.path)}
+                  icc={soundItem.category}
                 >
                   {soundItem.name}
                 </Button>
