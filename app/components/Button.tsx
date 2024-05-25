@@ -15,7 +15,17 @@ interface ButtonProps {
   icc?: string;
   onClick?: () => void;
 }
-const ico_map = {"sound": Sound_ico, "clouds": Cloud, "rain": Cloud_rain, "trees": trees, "water": water, "fan": fan, "ocean": wocean, "fire": fire, "night": night}
+const ico_map: { [key: string]: string } = {
+  sound: Sound_ico,
+  clouds: Cloud,
+  rain: Cloud_rain,
+  trees: trees,
+  water: water,
+  fan: fan,
+  ocean: wocean,
+  fire: fire,
+  night: night,
+};
 const Button = ({ icc, children, className, onClick, ...props } : ButtonProps) => {
   return (
     <div className={`flex flex-col items-center justify-center gap-2 ${className}`}>
@@ -29,7 +39,7 @@ const Button = ({ icc, children, className, onClick, ...props } : ButtonProps) =
         onClick={onClick}
         {...props}>
           
-      <img src={ico_map[icc] || ico_map["sound"]} />
+      <img src={ico_map[icc!] || ico_map["sound"]} />
 
       </button>
       <p className="text-center text-white">{children}</p>

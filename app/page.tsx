@@ -4,9 +4,13 @@ import React from 'react';
 import Button from './components/Button';
 import sound from '../sounds_dev.json';
 
+interface Playin {
+  [key: string]: [boolean, HTMLAudioElement];
+}
+
 export default function Home() {
   const sounds = Object.values(sound);
-  let playin: never[] = [];
+  const playin: Playin = {};
 
   // Function to play sound
   const playSound = (soundPath: string | undefined) => {
