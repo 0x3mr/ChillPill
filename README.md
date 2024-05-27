@@ -26,6 +26,11 @@ different sounds are in different categories like: Piano, Water, Rain
 - fast deploys
 - modern enough to satisfy our dev needs like handling audio
 
+## Running locally
+- git clone
+- make sure u have node 18 and npm installed
+- run `npm install` on the project folder
+- run the app `npm run dev`
 
 ## Deploying
 - We're using `pm2` to run a compiled build

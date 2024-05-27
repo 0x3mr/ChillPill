@@ -3,9 +3,10 @@
 import React from 'react';
 import Button from './components/Button';
 import sound from '../sounds_dev.json';
+import { Howl, Howler } from 'howler';
 
 interface Playin {
-  [key: string]: [boolean, HTMLAudioElement];
+  [key: string]: Howl | undefined;
 }
 
 export default function Home() {
@@ -18,20 +19,25 @@ export default function Home() {
       console.error("Invalid soundPath:", soundPath);
       return;
     }
-    if (playin[soundPath] !== undefined){
-      if (playin[soundPath][0] == true){
-      const audio = playin[soundPath][1];
-      audio.pause();
+
+    // Pause the sound if it's already playing
+    if (playin[soundPath]) {
+      playin[soundPath]?.stop();
       delete playin[soundPath];
-      console.log("Deleted", soundPath)
-      return;}
+      console.log("Stopped", soundPath);
+      return;
     }
-    const audio = new Audio(soundPath);
-    
-    audio.play();
-    audio.loop = true;
-    playin[soundPath] = [true, audio];
-    console.log(playin);
+
+    // Create a new Howl instance for the sound
+    const soundHowl = new Howl({
+      src: [soundPath],
+      loop: true
+    });
+
+    // Start playing the sound
+    soundHowl.play();
+    playin[soundPath] = soundHowl;
+    console.log("Playing", soundPath);
   };
 
   return (
