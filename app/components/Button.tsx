@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { useState, ReactNode } from 'react';
 import Cloud_rain from  '../icons/cloud_rain.svg';
 import Sound_ico from  '../icons/cloud_rain.svg';
 import Cloud from '../icons/cloud.svg';
@@ -27,10 +27,20 @@ const ico_map: { [key: string]: string } = {
   night: night,
 };
 const Button = ({ icc, children, className, onClick, ...props } : ButtonProps) => {
+  const [isToggled, setIsToggled] = useState(false); // Initial state: not toggled
+
+  const handleClick = () => {
+    setIsToggled(!isToggled); // Toggle isToggled on click
+    if (onClick) onClick(); // Call the original onClick handler if provided
+  };
   return (
     <div className={`flex flex-col items-center justify-center gap-2 ${className}`}>
       <button
-        className={`flex items-center justify-center px-4 py-2 bg-[#B8C37E] text-white font-bold shadow-md hover:bg-[#9AAE6C]`}
+        className={`
+          flex items-center justify-center px-4 py-2
+          ${isToggled ? 'toggled-style' : 'default-style'}  text-white font-bold shadow-md hover:bg-[#9AAE6C]
+        `}
+        //className={`flex items-center justify-center px-4 py-2 bg-[#B8C37E] text-white font-bold shadow-md hover:bg-[#9AAE6C]`}
         style={{
           borderRadius: '30px',
           width: 94,
