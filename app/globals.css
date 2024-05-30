@@ -12,22 +12,26 @@
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-end-rgb: 39, 39, 39;
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-end-rgb));
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.button.active {
+  box-shadow:  inset 2px 2px 5px #292b1c, inset -5px -2px 10px #636948;
+  background-color: #636948;
+}
+
+.button.inactive {
+  box-shadow: 0px 0px 20px 4px #636948;   
 }

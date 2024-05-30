@@ -13,6 +13,7 @@ interface ButtonProps {
   children: ReactNode;
   className?: string;
   icc?: string;
+  isActive?: boolean;
   onClick?: () => void;
 }
 const ico_map: { [key: string]: string } = {
@@ -26,25 +27,22 @@ const ico_map: { [key: string]: string } = {
   fire: fire,
   night: night,
 };
-const Button = ({ icc, children, className, onClick, ...props } : ButtonProps) => {
-  const [isToggled, setIsToggled] = useState(false); // Initial state: not toggled
+const Button = ({ icc, children, className, onClick, isActive, ...props } : ButtonProps) => {
 
-  const handleClick = () => {
-    setIsToggled(!isToggled); // Toggle isToggled on click
-    if (onClick) onClick(); // Call the original onClick handler if provided
-  };
+
   return (
     <div className={`flex flex-col items-center justify-center gap-2 ${className}`}>
       <button
         className={`
-          flex items-center justify-center px-4 py-2
-          ${isToggled ? 'bg-[#475e17]' : 'bg-[#B8C37E]'}  text-white font-bold shadow-md hover:bg-[#9AAE6C]
+          flex items-center justify-center px-4 py-2 bg-[#B8C37E]
+          button ${isActive ? 'active' : 'inactive'}  text-white font-bold shadow-md hover:bg-[#9AAE6C]
         `}
         //className={`flex items-center justify-center px-4 py-2 bg-[#B8C37E] text-white font-bold shadow-md hover:bg-[#9AAE6C]`}
         style={{
           borderRadius: '30px',
           width: 94,
           height: 94,
+          // boxShadow:  'inset 2px 2px 5px #292b1c, inset -5px -2px 10px #636948',
         }}
         onClick={onClick}
         {...props}>

@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Button from './components/Button';
 import sound from '../sounds_dev.json';
 import { Howl, Howler } from 'howler';
@@ -11,7 +11,8 @@ interface Playin {
 
 export default function Home() {
   const sounds = Object.values(sound);
-  const playin: Playin = {};
+  const [playin, setPlayin] = useState<{ [key: string]: Howl }>({});
+  const [activeButtons, setActiveButtons] = useState<{ [key: string]: boolean }>({});
 
   // Function to play sound
   const playSound = (soundPath: string | undefined) => {
@@ -20,10 +21,19 @@ export default function Home() {
       return;
     }
 
+    
     // Pause the sound if it's already playing
     if (playin[soundPath]) {
       playin[soundPath]?.stop();
-      delete playin[soundPath];
+      setPlayin((prevPlayin) => {
+        const newPlayin = { ...prevPlayin };
+        delete newPlayin[soundPath];
+        return newPlayin;
+      });
+      setActiveButtons((prevState) => ({
+        ...prevState,
+        [soundPath]: !prevState[soundPath],
+      }));
       console.log("Stopped", soundPath);
       return;
     }
@@ -33,13 +43,20 @@ export default function Home() {
       src: [soundPath],
       loop: true
     });
-
+    
     // Start playing the sound
     soundHowl.play();
-    playin[soundPath] = soundHowl;
-    console.log("Playing", soundPath);
+    setPlayin((prevPlayin) => ({
+      ...prevPlayin,
+      [soundPath]: soundHowl,
+    }));
+    setActiveButtons((prevState) => ({
+      ...prevState,
+      [soundPath]: !prevState[soundPath],
+    }));
+    console.log("Playing", soundPath, playin);
   };
-
+  
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
@@ -65,6 +82,7 @@ export default function Home() {
                   key={soundItem.name}
                   onClick={() => playSound(soundItem.path)}
                   icc={soundItem.category}
+                  isActive={activeButtons[soundItem.path]}
                 >
                   {soundItem.name}
                 </Button>
