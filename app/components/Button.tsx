@@ -38,7 +38,7 @@ const Button = ({ icc, children, className, onClick, ...props } : ButtonProps) =
       <button
         className={`
           flex items-center justify-center px-4 py-2
-          ${isToggled ? 'toggled-style' : 'default-style'}  text-white font-bold shadow-md hover:bg-[#9AAE6C]
+          ${isToggled ? 'bg-[#475e17]' : 'bg-[#B8C37E]'}  text-white font-bold shadow-md hover:bg-[#9AAE6C]
         `}
         //className={`flex items-center justify-center px-4 py-2 bg-[#B8C37E] text-white font-bold shadow-md hover:bg-[#9AAE6C]`}
         style={{
