@@ -2,7 +2,7 @@
 ![chill pill](images/README-CHILLPILL-BACKGROUND.png)
 # Aurthors
 Noor Amjad - [Github](https://github.com/Justxd22) / [Twitter](https://twitter.com/_xd222)   
-Amr Abdelfattah - [Github](https://github.com/therealamr) / [Twitter](https://twitter.com/an0n_amr)  
+Amr Abdelfattah - [Github](https://github.com/0x3mr) / [Twitter](https://twitter.com/an0n_amr)  
 Ahmed Shalaby - [Github](https://github.com/Madiocre) / [Twitter](https://twitter.com/)   
 ## File indexing and store
 ```py_stuff/index.py``` is indeed our indexing method to make and update our db stored in sound.json  
