@@ -1,5 +1,5 @@
 # CHILL PILL
-![chill pill](images/Gemini_Generated_Image_4xusf04xusf04xus.jpg)
+![chill pill](images/README-CHILLPILL-BACKGROUND.png)
 ## File indexing and store
 ```py_stuff/index.py``` is indeed our indexing method to make and update our db stored in sound.json  
 different sounds are in different categories like: Piano, Water, Rain  
