@@ -30,6 +30,7 @@ different sounds are in different categories like: Piano, Water, Rain
 - git clone
 - make sure u have node 18 and npm installed
 - run `npm install` on the project folder
+- `cp -r sounds public/`
 - run the app `npm run dev`
 
 ## Deploying
