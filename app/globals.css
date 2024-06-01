@@ -19,6 +19,9 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-end-rgb));
+  background-image: url(/ChillPill-Background.png);
+  background-size: cover; /* This ensures that the image covers the entire background */
+  background-position: center;
 }
 
 @layer utilities {
