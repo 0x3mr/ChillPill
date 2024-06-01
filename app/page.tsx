@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Button from './components/Button';
 import sound from '../sounds_dev.json';
 import { Howl, Howler } from 'howler';
+import logo from './icons/ChillPill-Logo.svg';
 
 interface Playin {
   [key: string]: Howl | undefined;
@@ -63,7 +64,7 @@ export default function Home() {
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Chill Pill
         </p>
-      <img src='ChillPill-Logo.png' class='logo'/>
+      <img src={logo} class='logo'/>
 
       </div>
 
