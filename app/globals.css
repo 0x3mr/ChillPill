@@ -35,3 +35,23 @@ body {
 .button.inactive {
   box-shadow: 0px 0px 20px 4px #636948;   
 }
+
+
+.logo{
+  animation-name: floating !important;
+  animation-duration: 3s !important;
+  animation-iteration-count: infinite !important;
+  animation-timing-function: ease-in-out !important;
+}
+
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(0, 15px);
+  }
+  to {
+    transform: translate(0, 0px);
+  }
+}
