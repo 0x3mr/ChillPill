@@ -11,29 +11,11 @@
 		"desc": "unknown",
 		"category": "sound"
 	},
-	"sound197": {
-		"name": "[!] sound197",
-		"path": "sounds/sound197.ogg",
-		"desc": "unknown",
-		"category": "sound"
-	},
 	"rain": {
 		"name": "Splash Rain",
 		"path": "sounds/rain.ogg",
 		"desc": "unknown",
 		"category": "rain"
-	},
-	"sound194": {
-		"name": "[!] sound194",
-		"path": "sounds/sound194.ogg",
-		"desc": "unknown",
-		"category": "sound"
-	},
-	"sound107": {
-		"name": "[!] sound107",
-		"path": "sounds/sound107.ogg",
-		"desc": "unknown",
-		"category": "sound"
 	},
 	"sound8": {
 		"name": "Cozy Day WB",
@@ -53,45 +35,15 @@
 		"desc": "unknown",
 		"category": "sound"
 	},
-	"sound32": {
-		"name": "[!] sound32",
-		"path": "sounds/sound32.ogg",
-		"desc": "unknown",
-		"category": "sound"
-	},
 	"sound98": {
 		"name": "Rain Noise",
 		"path": "sounds/sound98.ogg",
 		"desc": "unknown",
 		"category": "sound"
 	},
-	"sound104": {
-		"name": "[!] sound104",
-		"path": "sounds/sound104.ogg",
-		"desc": "unknown",
-		"category": "sound"
-	},
 	"sound26": {
 		"name": "Slightly Rough Rain",
 		"path": "sounds/sound26.ogg",
-		"desc": "unknown",
-		"category": "sound"
-	},
-	"sound49": {
-		"name": "[!] sound49 (does not loop properly)",
-		"path": "sounds/sound49.ogg",
-		"desc": "unknown",
-		"category": "sound"
-	},
-	"sound189": {
-		"name": "[!] sound189",
-		"path": "sounds/sound189.ogg",
-		"desc": "unknown",
-		"category": "sound"
-	},
-	"sound195": {
-		"name": "[!] sound195",
-		"path": "sounds/sound195.ogg",
 		"desc": "unknown",
 		"category": "sound"
 	},
@@ -108,7 +60,7 @@
 		"category": "night"
 	},
 	"sound28": {
-		"name": "sound28 MUSIC INSTRUMENT I FORGOT ITS NAME",
+		"name": "Xylophone Background",
 		"path": "sounds/sound28.ogg",
 		"desc": "unknown",
 		"category": "sound"
@@ -191,12 +143,6 @@
 		"desc": "unknown",
 		"category": "sound"
 	},
-	"sound192": {
-		"name": "[!] sound192",
-		"path": "sounds/sound192.ogg",
-		"desc": "unknown",
-		"category": "sound"
-	},
 	"sound112": {
 		"name": "Train Noise Outside",
 		"path": "sounds/sound112.ogg",
@@ -212,12 +158,6 @@
 	"sound48": {
 		"name": "iPhone Ringtone (Cute version)",
 		"path": "sounds/sound48.ogg",
-		"desc": "unknown",
-		"category": "sound"
-	},
-	"sound190": {
-		"name": "[!] sound190",
-		"path": "sounds/sound190.ogg",
 		"desc": "unknown",
 		"category": "sound"
 	},
@@ -242,12 +182,6 @@
 	"sound13": {
 		"name": "Uncovering Myths",
 		"path": "sounds/sound13.ogg",
-		"desc": "unknown",
-		"category": "sound"
-	},
-	"sound103": {
-		"name": "[!] sound103",
-		"path": "sounds/sound103.ogg",
 		"desc": "unknown",
 		"category": "sound"
 	},
@@ -296,12 +230,6 @@
 	"sound6": {
 		"name": "Cute Ringtone",
 		"path": "sounds/sound6.ogg",
-		"desc": "unknown",
-		"category": "sound"
-	},
-	"sound15": {
-		"name": "[!] sound15",
-		"path": "sounds/sound15.ogg",
 		"desc": "unknown",
 		"category": "sound"
 	},
@@ -365,23 +293,11 @@
 		"desc": "unknown",
 		"category": "sound"
 	},
-	"sound191": {
-		"name": "[!] sound191",
-		"path": "sounds/sound191.ogg",
-		"desc": "unknown",
-		"category": "sound"
-	},
 	"fire": {
 		"name": "Outright Firecamp",
 		"path": "sounds/fire.ogg",
 		"desc": "unknown",
 		"category": "fire"
-	},
-	"sound34": {
-		"name": "[!] sound34",
-		"path": "sounds/sound34.ogg",
-		"desc": "unknown",
-		"category": "sound"
 	},
 	"forest": {
 		"name": "Sunny Forest WB",
@@ -394,12 +310,6 @@
 		"path": "sounds/leaves.ogg",
 		"desc": "unknown",
 		"category": "trees"
-	},
-	"sound196": {
-		"name": "[!] sound196",
-		"path": "sounds/sound196.ogg",
-		"desc": "unknown",
-		"category": "sound"
 	},
 	"new_lullaby_005": {
 		"name": "High Pitch Twinkle",
@@ -449,12 +359,6 @@
 		"desc": "unknown",
 		"category": "wind"
 	},
-	"sound30": {
-		"name": "[!] sound30",
-		"path": "sounds/sound30.ogg",
-		"desc": "unknown",
-		"category": "sound"
-	},
 	"sound14": {
 		"name": "Rain hitting the Window",
 		"path": "sounds/sound14.ogg",
@@ -464,12 +368,6 @@
 	"sound65": {
 		"name": "Cutting trees WB",
 		"path": "sounds/sound65.ogg",
-		"desc": "unknown",
-		"category": "sound"
-	},
-	"sound198": {
-		"name": "[!] sound198",
-		"path": "sounds/sound198.ogg",
 		"desc": "unknown",
 		"category": "sound"
 	},
@@ -494,12 +392,6 @@
 	"sound163": {
 		"name": "Bird Sounds",
 		"path": "sounds/sound163.ogg",
-		"desc": "unknown",
-		"category": "sound"
-	},
-	"sound108": {
-		"name": "[!] sound108",
-		"path": "sounds/sound108.ogg",
 		"desc": "unknown",
 		"category": "sound"
 	},
@@ -545,21 +437,9 @@
 		"desc": "unknown",
 		"category": "sound"
 	},
-	"sound33": {
-		"name": "[!] sound33",
-		"path": "sounds/sound33.ogg",
-		"desc": "unknown",
-		"category": "sound"
-	},
 	"sound69": {
 		"name": "Rought Sea Shore",
 		"path": "sounds/sound69.ogg",
-		"desc": "unknown",
-		"category": "sound"
-	},
-	"sound31": {
-		"name": "[!] sound31",
-		"path": "sounds/sound31.ogg",
 		"desc": "unknown",
 		"category": "sound"
 	},
@@ -587,12 +467,6 @@
 		"desc": "unknown",
 		"category": "sound"
 	},
-	"sound29": {
-		"name": "[!] sound29",
-		"path": "sounds/sound29.ogg",
-		"desc": "unknown",
-		"category": "sound"
-	},
 	"sound73": {
 		"name": "Ceremony Clapping",
 		"path": "sounds/sound73.ogg",
@@ -614,12 +488,6 @@
 	"creek": {
 		"name": "Water Splashes",
 		"path": "sounds/creek.ogg",
-		"desc": "unknown",
-		"category": "sound"
-	},
-	"sound105": {
-		"name": "[!] sound105",
-		"path": "sounds/sound105.ogg",
 		"desc": "unknown",
 		"category": "sound"
 	},
@@ -653,21 +521,9 @@
 		"desc": "unknown",
 		"category": "sound"
 	},
-	"sound193": {
-		"name": "[!] sound193",
-		"path": "sounds/sound193.ogg",
-		"desc": "unknown",
-		"category": "sound"
-	},
 	"airplane_main": {
 		"name": "External Airplane Noise",
 		"path": "sounds/airplane_main.ogg",
-		"desc": "unknown",
-		"category": "sound"
-	},
-	"sound106": {
-		"name": "[!] sound106",
-		"path": "sounds/sound106.ogg",
 		"desc": "unknown",
 		"category": "sound"
 	},
