@@ -3,13 +3,13 @@
 		"name": "Twinkle Twinkle",
 		"path": "sounds/new_lullaby_003.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "twink"
 	},
 	"whitenoise": {
 		"name": "White Noise",
 		"path": "sounds/whitenoise.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "noise"
 	},
 	"rain": {
 		"name": "Splash Rain",
@@ -21,37 +21,37 @@
 		"name": "Cozy Day WB",
 		"path": "sounds/sound8.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "day"
 	},
 	"sound81": {
 		"name": "Snoring Squirrel",
 		"path": "sounds/sound81.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "kitty"
 	},
 	"sound165": {
 		"name": "Gravel Crunching WB",
 		"path": "sounds/sound165.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "sand"
 	},
 	"sound98": {
 		"name": "Rain Noise",
 		"path": "sounds/sound98.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "rain"
 	},
 	"sound26": {
 		"name": "Slightly Rough Rain",
 		"path": "sounds/sound26.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "rain"
 	},
 	"sound74": {
 		"name": "Moonight Forest",
 		"path": "sounds/sound74.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "forest"
 	},
 	"night": {
 		"name": "Annoying Crickets",
@@ -63,25 +63,25 @@
 		"name": "Xylophone Background",
 		"path": "sounds/sound28.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "Xylophone"
 	},
 	"sound12": {
 		"name": "Soft Thunder WR",
 		"path": "sounds/sound12.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "thunder"
 	},
 	"new_lullaby_004": {
 		"name": "Twinkle Twinkle in Glockenspiel",
 		"path": "sounds/new_lullaby_004.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "twink"
 	},
 	"sound10": {
 		"name": "Calming Stage Ceremony",
 		"path": "sounds/sound10.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "cermony"
 	},
 	"car": {
 		"name": "Car Street Noise",
@@ -93,7 +93,7 @@
 		"name": "Regular Rain",
 		"path": "sounds/sound223.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "rain"
 	},
 	"rain_on_window": {
 		"name": "Window Rain",
@@ -105,73 +105,73 @@
 		"name": "Old TV No Signal",
 		"path": "sounds/sound19.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "tv"
 	},
 	"sound9": {
 		"name": "Piano Depression",
 		"path": "sounds/sound9.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "piano"
 	},
 	"sound127": {
 		"name": "Campfire",
 		"path": "sounds/sound127.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "fire"
 	},
 	"sound62": {
 		"name": "Night Shift at Office",
 		"path": "sounds/sound62.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "night"
 	},
 	"sound90": {
 		"name": "Scary Owl",
 		"path": "sounds/sound90.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "owl"
 	},
 	"sound121": {
 		"name": "Passive Cars Noise",
 		"path": "sounds/sound121.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "cars"
 	},
 	"sound59": {
 		"name": "Sea Shore",
 		"path": "sounds/sound59.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "sea"
 	},
 	"sound112": {
 		"name": "Train Noise Outside",
 		"path": "sounds/sound112.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "train"
 	},
 	"sound3": {
 		"name": "Mongols Castle at night",
 		"path": "sounds/sound3.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "night"
 	},
 	"sound48": {
 		"name": "iPhone Ringtone (Cute version)",
 		"path": "sounds/sound48.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "twink"
 	},
 	"new_lullaby_008": {
 		"name": "Blinky Twinkle Little Star",
 		"path": "sounds/new_lullaby_008.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "twink"
 	},
 	"sound4": {
 		"name": "Washing Hands Splashes",
 		"path": "sounds/sound4.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "water"
 	},
 	"fan": {
 		"name": "Truck Internal Fans",
@@ -183,43 +183,43 @@
 		"name": "Uncovering Myths",
 		"path": "sounds/sound13.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "music"
 	},
 	"sound11": {
 		"name": "Soft Water Splashes",
 		"path": "sounds/sound11.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "water"
 	},
 	"sound119": {
 		"name": "Japanese Flute",
 		"path": "sounds/sound119.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "flute"
 	},
 	"sound84": {
 		"name": "Passive Street Noise",
 		"path": "sounds/sound84.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "street"
 	},
 	"sound83": {
 		"name": "Abandoned Roof with Thunder",
 		"path": "sounds/sound83.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "thunder"
 	},
 	"sound111": {
 		"name": "Running River with Bubbles",
 		"path": "sounds/sound111.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "river"
 	},
 	"sound125": {
 		"name": "Scary Ding",
 		"path": "sounds/sound125.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "ding"
 	},
 	"brown_noise": {
 		"name": "High Brown Noise",
@@ -231,67 +231,67 @@
 		"name": "Cute Ringtone",
 		"path": "sounds/sound6.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "music"
 	},
 	"sound7": {
 		"name": "Space & Sound",
 		"path": "sounds/sound7.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "music"
 	},
 	"sound120": {
 		"name": "Another Campfire",
 		"path": "sounds/sound120.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "fire"
 	},
 	"sound158": {
 		"name": "Travelling Road",
 		"path": "sounds/sound158.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "noise"
 	},
 	"sound66": {
 		"name": "Dirt Rain",
 		"path": "sounds/sound66.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "rain"
 	},
 	"sound64": {
 		"name": "I'm under the wotar",
 		"path": "sounds/sound64.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "water"
 	},
 	"sound164": {
 		"name": "Rising Water",
 		"path": "sounds/sound164.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "water"
 	},
 	"sound70": {
 		"name": "Rain Spashes on Concrete",
 		"path": "sounds/sound70.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "rain"
 	},
 	"new_lullaby_006": {
 		"name": "Twinkle it",
 		"path": "sounds/new_lullaby_006.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "twink"
 	},
 	"sound42": {
 		"name": "Noise of the Road",
 		"path": "sounds/sound42.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "noise"
 	},
 	"sound1": {
 		"name": "Passive River",
 		"path": "sounds/sound1.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "water"
 	},
 	"fire": {
 		"name": "Outright Firecamp",
@@ -309,121 +309,121 @@
 		"name": "Passive Subway Noise",
 		"path": "sounds/leaves.ogg",
 		"desc": "unknown",
-		"category": "trees"
+		"category": "noise"
 	},
 	"new_lullaby_005": {
 		"name": "High Pitch Twinkle",
 		"path": "sounds/new_lullaby_005.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "twink"
 	},
 	"sound77": {
 		"name": "Ta-Ra-Re-La-La-Le",
 		"path": "sounds/sound77.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "music"
 	},
 	"sound126": {
 		"name": "End of Times with Piano",
 		"path": "sounds/sound126.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "piano"
 	},
 	"sound93": {
 		"name": "Annoying Rain Noise",
 		"path": "sounds/sound93.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "rain"
 	},
 	"cafe": {
 		"name": "Restaurant",
 		"path": "sounds/cafe.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "cafe"
 	},
 	"sound99": {
 		"name": "Annoying Owls",
 		"path": "sounds/sound99.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "owl"
 	},
 	"sound92": {
 		"name": "Scare OOO",
 		"path": "sounds/sound92.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "music"
 	},
 	"wind": {
 		"name": "Passive Passing Car",
 		"path": "sounds/wind.ogg",
 		"desc": "unknown",
-		"category": "wind"
+		"category": "cars"
 	},
 	"sound14": {
 		"name": "Rain hitting the Window",
 		"path": "sounds/sound14.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "rain"
 	},
 	"sound65": {
 		"name": "Cutting trees WB",
 		"path": "sounds/sound65.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "trees"
 	},
 	"sound113": {
 		"name": "It's time.",
 		"path": "sounds/sound113.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "music"
 	},
 	"sound2": {
 		"name": "Playing with Water",
 		"path": "sounds/sound2.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "water"
 	},
 	"sound61": {
 		"name": "Rough Rain",
 		"path": "sounds/sound61.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "rain"
 	},
 	"sound163": {
 		"name": "Bird Sounds",
 		"path": "sounds/sound163.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "birds"
 	},
 	"sound78": {
 		"name": "Abandoned Clock",
 		"path": "sounds/sound78.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "clock"
 	},
 	"sound101": {
 		"name": "School Cafeteria",
 		"path": "sounds/sound101.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "cafe"
 	},
 	"sound110": {
 		"name": "Slow Twinkle",
 		"path": "sounds/sound110.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "twink"
 	},
 	"sound79": {
 		"name": "Weak Frog Ribbits",
 		"path": "sounds/sound79.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "frog"
 	},
 	"sound143": {
 		"name": "Incoming Danger",
 		"path": "sounds/sound143.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "noise"
 	},
 	"ocean": {
 		"name": "Ocean Shore",
@@ -435,120 +435,120 @@
 		"name": "Night Crickets",
 		"path": "sounds/sound16.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "night"
 	},
 	"sound69": {
 		"name": "Rought Sea Shore",
 		"path": "sounds/sound69.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "sea"
 	},
 	"new_lullaby_007": {
 		"name": "Deep Twinkle",
 		"path": "sounds/new_lullaby_007.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "twink"
 	},
 	"sound100": {
 		"name": "Crunching Forest Floor",
 		"path": "sounds/sound100.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "forest"
 	},
 	"new_lullaby_002": {
 		"name": "Deep Twinkle Remixed",
 		"path": "sounds/new_lullaby_002.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "twink"
 	},
 	"sound136": {
 		"name": "Travelling Wind",
 		"path": "sounds/sound136.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "wind"
 	},
 	"sound73": {
 		"name": "Ceremony Clapping",
 		"path": "sounds/sound73.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "clap"
 	},
 	"sound53": {
 		"name": "Forest Birds",
 		"path": "sounds/sound53.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "birds"
 	},
 	"sound96": {
 		"name": "Travelling Closed Windows",
 		"path": "sounds/sound96.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "noise"
 	},
 	"creek": {
 		"name": "Water Splashes",
 		"path": "sounds/creek.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "water"
 	},
 	"sound63": {
 		"name": "Underwater",
 		"path": "sounds/sound63.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "water"
 	},
 	"train": {
 		"name": "Train Racks",
 		"path": "sounds/train.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "train"
 	},
 	"sound56": {
 		"name": "Far River & Birds",
 		"path": "sounds/sound56.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "birds"
 	},
 	"new_lullaby_001": {
 		"name": "Cute Twinkle",
 		"path": "sounds/new_lullaby_001.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "twink"
 	},
 	"thunders": {
 		"name": "Rainy Thunder",
 		"path": "sounds/thunders.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "thunder"
 	},
 	"airplane_main": {
 		"name": "External Airplane Noise",
 		"path": "sounds/airplane_main.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "wind"
 	},
 	"iceflakes": {
 		"name": "Colliding Iceflakes",
 		"path": "sounds/iceflakes.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "snow"
 	},
 	"sound5": {
 		"name": "Snowy Wind",
 		"path": "sounds/sound5.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "snow"
 	},
 	"sound27": {
 		"name": "Shower Water Echo",
 		"path": "sounds/sound27.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "water"
 	},
 	"sound89": {
 		"name": "Annoying Vaccum",
 		"path": "sounds/sound89.ogg",
 		"desc": "unknown",
-		"category": "sound"
+		"category": "vaccum"
 	}
 }

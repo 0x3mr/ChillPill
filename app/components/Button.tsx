@@ -8,6 +8,34 @@ import wocean from '../icons/water_ocean.svg';
 import fan from '../icons/fan.svg';
 import fire from '../icons/fire.svg';
 import night from '../icons/night.svg';
+import music_note from '../icons/music_note.svg';
+import snow1 from '../icons/snow1.svg';
+import street from '../icons/street.svg';
+import bell from '../icons/bell.svg';
+import day from '../icons/day.svg';
+import noise from '../icons/noise.svg';
+import thunder from '../icons/thunder.svg';
+import bird from '../icons/bird.svg';
+import owl from '../icons/owl.svg';
+import train from '../icons/train.svg';
+import cafe from '../icons/cafe.svg';
+import piano from '../icons/piano.svg';
+import car from '../icons/car.svg';
+import flute from '../icons/flute.svg';
+import random from '../icons/random.svg';
+import tv from '../icons/tv.svg';
+import cat from '../icons/cat.svg';
+import forest from '../icons/forest.svg';
+import river from '../icons/river.svg';
+import water_ocean from '../icons/water_ocean.svg';
+import clapping from '../icons/clapping.svg';
+import frog from '../icons/frog.svg';
+import sea from '../icons/sea.svg';
+import wind from '../icons/wind.svg';
+import clock from '../icons/clock.svg';
+import music from '../icons/music.svg';
+import snow from '../icons/snow.svg';
+import xylophone from '../icons/xylophone.svg';
 
 interface ButtonProps {
   children: ReactNode;
@@ -26,6 +54,34 @@ const ico_map: { [key: string]: string } = {
   ocean: wocean,
   fire: fire,
   night: night,
+  twink: music_note,
+  noise: noise,
+  day: day,
+  kitty: cat,
+  sand: Sound_ico, //TODO
+  forest: forest,
+  Xylophone: xylophone,
+  thunder: thunder,
+  cermony: Sound_ico, // TODO
+  cars: car,
+  tv: tv,
+  piano: piano,
+  owl: owl,
+  sea: sea,
+  train: train,
+  music: music,
+  flute: flute,
+  street: street,
+  river: river,
+  ding: bell,
+  cafe: cafe,
+  birds: bird,
+  clock: clock,
+  frog: frog,
+  wind: wind,
+  clap: clapping,
+  snow: snow,
+  vaccum: Sound_ico, // TODO
 };
 const Button = ({ icc, children, className, onClick, isActive, ...props } : ButtonProps) => {
 
