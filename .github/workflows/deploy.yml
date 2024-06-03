@@ -74,7 +74,7 @@ jobs:
       run: |
         echo "$SSH_PRIVATE_KEY" > key.pem
         chmod 600 key.pem
-        scp -i key.pem next-build.zip ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/home/ubuntu/ChillPill
+        scp -i key.pem next-build.zip ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/ubuntu/ChillPill
 
 
     - name: Deploy to Server
@@ -84,7 +84,7 @@ jobs:
         username: ubuntu
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
-          cd Chillpill
+          cd /home/ubuntu/ChillPill
           unzip next-build.zip -d .next
           pm2 restart chillpill
 
