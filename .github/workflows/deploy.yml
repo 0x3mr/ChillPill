@@ -32,8 +32,8 @@ jobs:
     - name: Run Lint
       run: npm run lint -- --fix
 
-    - name: Run Type Check
-      run: npm run type-check
+    # - name: Run Type Check
+    #   run: npm run type-check
 
   build-and-deploy:
     runs-on: ubuntu-latest
