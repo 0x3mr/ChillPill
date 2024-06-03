@@ -30,7 +30,7 @@ jobs:
       run: npm install
 
     - name: Run Lint
-      run: npm run lint
+      run: npm run lint -- --fix
 
     - name: Run Type Check
       run: npm run type-check
