@@ -6,16 +6,86 @@ on:
       - main
 
 jobs:
-  deploy:
+  lint-and-type-check:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18'
+
+    - name: Cache node_modules
+      uses: actions/cache@v2
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run Lint
+      run: npm run lint
+
+    - name: Run Type Check
+      run: npm run type-check
+
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    needs: lint-and-type-check
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18'
+
+    - name: Cache node_modules
+      uses: actions/cache@v2
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build Next.js app
+      run: npm run build
+
+    - name: Zip the .next folder
+      run: zip -r next-build.zip .next
+
+    - name: Transfer Zip File to Server
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        SSH_HOST: web-02.fluffycookie.tech
+        SSH_USER: ubuntu
+        SSH_PORT: 22
+      run: |
+        echo "$SSH_PRIVATE_KEY" > key.pem
+        chmod 600 key.pem
+        scp -i key.pem next-build.zip ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/home/ubuntu/ChillPill
+
 
     - name: Deploy to Server
-      env:
-        DEPLOY_SECRET_KEY: ${{ secrets.DEPLOY_SECRET_KEY }}
-      run: |
-        curl -X POST \
-          -H "Content-Type: application/json" \
-          -H "x-deploy-secret: $DEPLOY_SECRET_KEY" \
-          http://web-02.fluffycookie.tech/chillpill/api/deploy
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: web-02.fluffycookie.tech
+        username: ubuntu
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        script: |
+          cd Chillpill
+          unzip next-build.zip -d .next
+          pm2 restart chillpill
+
+
