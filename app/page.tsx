@@ -73,7 +73,7 @@ export default function Home() {
       
       <div>
       <p className="fixed left-0 top-0 flex w-full justify-center">
-          Click any song to play
+          Click any Button to play
         </p>
       </div>
 

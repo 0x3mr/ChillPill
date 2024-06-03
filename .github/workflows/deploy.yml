@@ -85,6 +85,7 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
           cd /home/ubuntu/ChillPill
+          git pull
           unzip next-build.zip -d .next
           pm2 restart chillpill
 
