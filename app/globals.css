@@ -45,6 +45,9 @@ body {
   animation-duration: 3s !important;
   animation-iteration-count: infinite !important;
   animation-timing-function: ease-in-out !important;
+  padding: 50px;
+  margin-top: 75px;
+  margin-bottom: 75px;
 }
 
 @keyframes floating {

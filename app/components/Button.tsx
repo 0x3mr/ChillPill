@@ -95,9 +95,10 @@ const Button = ({ icc, children, className, onClick, isActive, ...props } : Butt
         `}
         //className={`flex items-center justify-center px-4 py-2 bg-[#B8C37E] text-white font-bold shadow-md hover:bg-[#9AAE6C]`}
         style={{
-          borderRadius: '30px',
-          width: 94,
-          height: 94,
+          borderRadius: '15px',
+          width: 230,
+          height: 60,
+          marginTop: 30,
           // boxShadow:  'inset 2px 2px 5px #292b1c, inset -5px -2px 10px #636948',
         }}
         onClick={onClick}
