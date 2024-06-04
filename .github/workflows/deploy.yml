@@ -86,7 +86,7 @@ jobs:
         script: |
           cd /home/ubuntu/ChillPill
           git pull
-          unzip -o next-build.zip -d .next
+          unzip -o next-build.zip
           pm2 restart chillpill
 
 
