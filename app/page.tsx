@@ -23,21 +23,21 @@ export default function Home() {
     }
 
     
-    // // Pause the sound if it's already playing
-    // if (playin[soundPath]) {
-    //   playin[soundPath]?.stop();
-    //   setPlayin((prevPlayin) => {
-    //     const newPlayin = { ...prevPlayin };
-    //     delete newPlayin[soundPath];
-    //     return newPlayin;
-    //   });
-    //   setActiveButtons((prevState) => ({
-    //     ...prevState,
-    //     [soundPath]: !prevState[soundPath],
-    //   }));
-    //   console.log("Stopped", soundPath);
-    //   return;
-    // }
+    // Pause the sound if it's already playing
+    if (playin[soundPath]) {
+      playin[soundPath]?.stop();
+      setPlayin((prevPlayin) => {
+        const newPlayin = { ...prevPlayin };
+        delete newPlayin[soundPath];
+        return newPlayin;
+      });
+      setActiveButtons((prevState) => ({
+        ...prevState,
+        [soundPath]: !prevState[soundPath],
+      }));
+      console.log("Stopped", soundPath);
+      return;
+    }
     
     // Stop any currently playing sound before playing a new one
     if (Object.values(playin).length > 0) {
