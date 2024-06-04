@@ -1,5 +1,7 @@
 # CHILL PILL
 ![chill pill](images/README-CHILLPILL-BACKGROUND.png)
+# Live
+- [web-02.fluffycookie.tech/chillpill/](http://web-02.fluffycookie.tech/chillpill/)
 # Authors
 Noor Amjad - [GitHub](https://github.com/Justxd22) / [Twitter](https://twitter.com/_xd222)   
 Amr Abdelfattah - [GitHub](https://github.com/0x3mr) / [Twitter](https://twitter.com/an0n_amr)  
