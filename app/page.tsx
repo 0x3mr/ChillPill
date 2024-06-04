@@ -38,6 +38,18 @@ export default function Home() {
       console.log("Stopped", soundPath);
       return;
     }
+    
+    // Stop any currently playing sound before playing a new one
+    if (Object.values(playin).length > 0) {
+      Object.values(playin).forEach((sound) => sound?.stop());
+      setPlayin({}); // Clear the playin state
+      setActiveButtons((prevState) =>
+        Object.fromEntries(
+          Object.entries(prevState).map(([key, value]) => [key, false])
+        )
+      ); // Reset all active states
+      console.log("Stopped all playing sounds");
+    }
 
     // Create a new Howl instance for the sound
     const soundHowl = new Howl({
@@ -59,7 +71,8 @@ export default function Home() {
   };
   
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center">
+
+    <main className="flex min-h-screen flex-col items-center justify-center px-4 py-24">
 
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex"> </div>
       <img src={logo} className='logo'/>
