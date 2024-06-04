@@ -9,15 +9,19 @@ import logo from './icons/ChillPill-Logo.svg';
 interface Playin {
   [key: string]: Howl | undefined;
 }
+interface SoundNameMapping {
+  [key: string]: string;
+}
 
 export default function Home() {
   const sounds = Object.values(sound);
   const [playin, setPlayin] = useState<{ [key: string]: Howl }>({});
   const [activeButtons, setActiveButtons] = useState<{ [key: string]: boolean }>({});
   const [volumes, setVolumes] = useState<{ [key: string]: number }>({});
+  const [soundNameMapping, setSoundNameMapping] = useState<SoundNameMapping>({});
 
   // Function to play sound
-  const playSound = (soundPath: string | undefined) => {
+  const playSound = (soundPath: string | undefined, soundName: string) => {
     if (!soundPath) {
       console.error("Invalid soundPath:", soundPath);
       return;
@@ -36,7 +40,12 @@ export default function Home() {
         ...prevState,
         [soundPath]: !prevState[soundPath],
       }));
-      console.log("Stopped", soundPath);
+      setSoundNameMapping((prevMapping) => {
+        const newMapping = { ...prevMapping };
+        delete newMapping[soundPath];
+        return newMapping;
+      });
+      console.log("Stopped", soundPath, soundNameMapping);
       return;
     }
 
@@ -68,7 +77,11 @@ export default function Home() {
       ...prevState,
       [soundPath]: !prevState[soundPath],
     }));
-    console.log("Playing", soundPath, playin);
+    setSoundNameMapping((prevMapping) => ({
+      ...prevMapping,
+      [soundPath]: soundName,
+    }));
+    console.log("Playing", soundPath, playin, soundNameMapping);
   };
 
   const changeVolume = (soundPath: string, volume: number) => {
@@ -90,7 +103,7 @@ export default function Home() {
         {Object.keys(playin).map((soundPath) => (
           playin[soundPath] && (
             <div key={soundPath} className="mb-4">
-              <p>{soundPath}</p>
+              <p>{soundNameMapping[soundPath]}</p>
               <input
                 type="range"
                 min="0"
@@ -114,7 +127,7 @@ export default function Home() {
               sounds.map((soundItem) => (
                 <Button
                   key={soundItem.name}
-                  onClick={() => playSound(soundItem.path)}
+                  onClick={() => playSound(soundItem.path, soundItem.name)}
                   icc={soundItem.category}
                   isActive={activeButtons[soundItem.path]}
                 >
