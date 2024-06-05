@@ -97,7 +97,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center Bottompaddin">
       <div className="flex flex-no-wrap">
-        <div style="min-height: 716px" className="w-64 absolute sm:relative bg-trasparent-800 shadow md:h-full flex-col justify-between hidden sm:flex">
+        <div style={{ minHeight: '716px' }} className="w-64 absolute sm:relative bg-trasparent-800 shadow md:h-full flex-col justify-between hidden sm:flex">
           <h2 className="text-xl font-bold mb-4">Volume Controls</h2>
           {Object.keys(playin).map((soundPath) => (
             playin[soundPath] && (
