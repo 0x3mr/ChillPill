@@ -97,7 +97,6 @@ export default function Home() {
       console.log("Stopped all playing sounds");
     }
   };
-  const [showVolumeControls, setShowVolumeControls] = useState(!!Object.values(playin).length); // Initial state based on playing sounds
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center Bottompaddin">
