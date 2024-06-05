@@ -98,10 +98,10 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-center Bottompaddin">
       <div className="flex flex-no-wrap">
         <div style={{ minHeight: '716px' }} className="w-64 absolute sm:relative bg-trasparent-800 shadow md:h-full flex-col hidden sm:flex">
-          <h2 className="text-xl p-12 font-bold mb-4">Volume Controls</h2>
+          <h2 className="text-xl p-20 font-bold mb-4">Volume Controls</h2>
           {Object.keys(playin).map((soundPath) => (
             playin[soundPath] && (
-              <div key={soundPath} className="mb-4">
+              <div key={soundPath} className="text-center mb-4">
                 <p>{soundNameMapping[soundPath]}</p>
                 <input
                   type="range"
