@@ -19,6 +19,7 @@ export default function Home() {
   const [activeButtons, setActiveButtons] = useState<{ [key: string]: boolean }>({});
   const [volumes, setVolumes] = useState<{ [key: string]: number }>({});
   const [soundNameMapping, setSoundNameMapping] = useState<SoundNameMapping>({});
+  const [showVolumeControls, setShowVolumeControls] = useState(!!Object.values(playin).length); // Initial state based on playing sounds
 
   // Function to play sound
   const playSound = (soundPath: string | undefined, soundName: string) => {
@@ -96,7 +97,8 @@ export default function Home() {
       console.log("Stopped all playing sounds");
     }
   };
-  
+  const [showVolumeControls, setShowVolumeControls] = useState(!!Object.values(playin).length); // Initial state based on playing sounds
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-center Bottompaddin">
       <div className="flex justify-center items-center">
