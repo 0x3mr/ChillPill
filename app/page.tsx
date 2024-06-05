@@ -117,7 +117,7 @@ export default function Home() {
         </div>
         <div className="container mx-auto py-10 h-64 md:w-4/5 w-11/12 px-6">
           <div className="w-full h-full rounded">
-            <div class="flex justify-center items-center">
+            <div className="flex justify-center items-center">
               <img src={logo} className='logo'/>
             </div>
             <div className="flex flex-grow items-center justify-center w-full">
