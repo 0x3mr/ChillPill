@@ -93,6 +93,19 @@ export default function Home() {
       }));
     }
   };
+
+  const stopPlayingSounds = () => {
+    if (Object.values(playin).length > 0) {
+      Object.values(playin).forEach((sound) => sound?.stop());
+      setPlayin({});
+      setActiveButtons((prevState) =>
+        Object.fromEntries(
+          Object.entries(prevState).map(([key, value]) => [key, false])
+        )
+      );
+      console.log("Stopped all playing sounds");
+    }
+  };
   
   return (
     <main className="flex min-h-screen flex-col items-center justify-center Bottompaddin">
@@ -101,7 +114,11 @@ export default function Home() {
       </div>
       <div className="flex bg-cover">
         <div style={{ minHeight: '716px' }} className="w-64 absolute sm:relative bg-trasparent-800 shadow md:h-full flex-col hidden sm:flex">
-          <h2 className="text-xl p-20 font-bold mb-4">Volume Controls</h2>
+          <h2 className="text-xl p-20 font-bold text-white mb-4">Volume Controls</h2>
+          <button id="stop-button"
+                  className="text-xl p-20 font-bold mb-4"
+                  onClick={stopPlayingSounds}
+            >Stop All Sounds</button>
           {Object.keys(playin).map((soundPath) => (
             playin[soundPath] && (
               <div key={soundPath} className="text-center mb-4">
