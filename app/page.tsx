@@ -95,50 +95,96 @@ export default function Home() {
   };
   
   return (
-
     <main className="flex min-h-screen flex-col items-center justify-center Bottompaddin">
-
-<div className="w-1/4 p-4 bg-gray-200">
-        <h2 className="text-xl font-bold mb-4">Volume Controls</h2>
-        {Object.keys(playin).map((soundPath) => (
-          playin[soundPath] && (
-            <div key={soundPath} className="mb-4">
-              <p>{soundNameMapping[soundPath]}</p>
-              <input
-                type="range"
-                min="0"
-                max="1"
-                step="0.01"
-                value={volumes[soundPath] || 1}
-                onChange={(e) => changeVolume(soundPath, parseFloat(e.target.value))}
-              />
-            </div>
-          )
-        ))}
+      <div className="flex justify-center items-center">
+        <img src={logo} className='logo'/>
       </div>
-
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex"> </div>
-      <img src={logo} className='logo'/>
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-pink-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:pink:to-pink-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]"></div>
-
-      <div className="flex flex-grow items-center justify-center w-full">
-        <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-            {sounds.length > 0 ? (
-              sounds.map((soundItem) => (
-                <Button
-                  key={soundItem.name}
-                  onClick={() => playSound(soundItem.path, soundItem.name)}
-                  icc={soundItem.category}
-                  isActive={activeButtons[soundItem.path]}
-                >
-                  {soundItem.name}
-                </Button>
-              ))
-            ) : (
-              <p>No sounds available</p>
-            )}
+      <div className="flex flex-no-wrap">
+        <div style={{ minHeight: '716px' }} className="w-64 absolute sm:relative bg-trasparent-800 shadow md:h-full flex-col hidden sm:flex">
+          <h2 className="text-xl p-20 font-bold mb-4">Volume Controls</h2>
+          {Object.keys(playin).map((soundPath) => (
+            playin[soundPath] && (
+              <div key={soundPath} className="text-center mb-4">
+                <p>{soundNameMapping[soundPath]}</p>
+                <input
+                  type="range"
+                  min="0"
+                  max="1"
+                  step="0.01"
+                  value={volumes[soundPath] || 1}
+                  onChange={(e) => changeVolume(soundPath, parseFloat(e.target.value))}
+                />
+              </div>
+            )
+          ))}
+        </div>
+        <div className="container mx-auto py-10 h-64 md:w-4/5 w-11/12 px-6">
+          <div className="w-full h-full rounded">
+            <div className="flex flex-grow items-center justify-center w-full">
+              <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
+                {sounds.length > 0 ? (
+                  sounds.map((soundItem) => (
+                    <Button
+                      key={soundItem.name}
+                      onClick={() => playSound(soundItem.path, soundItem.name)}
+                      icc={soundItem.category}
+                      isActive={activeButtons[soundItem.path]}
+                    >
+                      {soundItem.name}
+                    </Button>
+                  ))
+                ) : (
+                  <p>No sounds available</p>
+                )}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
+//     <main className="flex min-h-screen flex-col items-center justify-center Bottompaddin">
+
+// <div className="w-1/4 p-4 bg-gray-200">
+//         <h2 className="text-xl font-bold mb-4">Volume Controls</h2>
+//         {Object.keys(playin).map((soundPath) => (
+//           playin[soundPath] && (
+//             <div key={soundPath} className="mb-4">
+//               <p>{soundNameMapping[soundPath]}</p>
+//               <input
+//                 type="range"
+//                 min="0"
+//                 max="1"
+//                 step="0.01"
+//                 value={volumes[soundPath] || 1}
+//                 onChange={(e) => changeVolume(soundPath, parseFloat(e.target.value))}
+//               />
+//             </div>
+//           )
+//         ))}
+//       </div>
+
+//       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex"> </div>
+//       <img src={logo} className='logo'/>
+//       <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-pink-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:pink:to-pink-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]"></div>
+
+//       <div className="flex flex-grow items-center justify-center w-full">
+//         <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
+//             {sounds.length > 0 ? (
+//               sounds.map((soundItem) => (
+//                 <Button
+//                   key={soundItem.name}
+//                   onClick={() => playSound(soundItem.path, soundItem.name)}
+//                   icc={soundItem.category}
+//                   isActive={activeButtons[soundItem.path]}
+//                 >
+//                   {soundItem.name}
+//                 </Button>
+//               ))
+//             ) : (
+//               <p>No sounds available</p>
+//             )}
+//         </div>
+//       </div>
+//     </main>
   );
 }
