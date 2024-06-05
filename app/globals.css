@@ -18,10 +18,12 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-end-rgb));
+  /* background: rgb(var(--background-end-rgb));
   background-image: url(/ChillPill-Background.png);
   background-size: cover; /* This ensures that the image covers the entire background */
-  background-position: center;
+  /* background-position: center; */
+  background: rgb(104,24,70);
+  background: linear-gradient(111deg, rgba(104,24,70,1) 1%, rgba(11,0,26,1) 34%, rgba(61,1,80,1) 100%);
 }
 
 @layer utilities {
