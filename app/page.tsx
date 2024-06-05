@@ -46,7 +46,10 @@ export default function Home() {
         delete newMapping[soundPath];
         return newMapping;
       });
-      setShowVolumeControls(true); // Update state to show volume controls
+      if (Object.keys(playin).length < 2){
+      setShowVolumeControls(false);
+      }
+
 
       console.log("Stopped", soundPath, soundNameMapping);
       return;
@@ -72,6 +75,7 @@ export default function Home() {
       ...prevMapping,
       [soundPath]: soundName,
     }));
+    setShowVolumeControls(true);
     console.log("Playing", soundPath, playin, soundNameMapping);
   };
 
@@ -104,7 +108,11 @@ export default function Home() {
         <img src={logo} className='logo'/>
       </div>
       <div className="flex bg-cover">
-        <div style={{ minHeight: '716px' }} className="w-64 absolute sm:relative bg-trasparent-800 shadow md:h-full flex-col flex ${showVolumeControls ? '' : 'hidden'}">
+        <div style={{ minHeight: '716px' }} 
+        className={`w-64 absolute sm:relative bg-transparent-800 shadow md:h-full flex-col flex ${
+          showVolumeControls ? '' : 'hidden'
+        }`}
+        >
           <h2 className="text-xl text-center p-15 font-bold text-white mb-4">Volume Controls</h2>
           <button id="stop-button"
                   className="text-white bg-red-700 hover:bg-red-800 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
