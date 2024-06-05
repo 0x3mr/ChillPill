@@ -49,18 +49,6 @@ export default function Home() {
       return;
     }
 
-    // // Stop any currently playing sound before playing a new one
-    // if (Object.values(playin).length > 0) {
-    //   Object.values(playin).forEach((sound) => sound?.stop());
-    //   setPlayin({}); // Clear the playin state
-    //   setActiveButtons((prevState) =>
-    //     Object.fromEntries(
-    //       Object.entries(prevState).map(([key, value]) => [key, false])
-    //     )
-    //   ); // Reset all active states
-    //   console.log("Stopped all playing sounds");
-    // }
-
     // Create a new Howl instance for the sound
     const soundHowl = new Howl({
       src: [soundPath],
@@ -114,9 +102,9 @@ export default function Home() {
       </div>
       <div className="flex bg-cover">
         <div style={{ minHeight: '716px' }} className="w-64 absolute sm:relative bg-trasparent-800 shadow md:h-full flex-col hidden sm:flex">
-          <h2 className="text-xl p-20 font-bold text-white mb-4">Volume Controls</h2>
+          <h2 className="text-xl p-15 font-bold text-white mb-4">Volume Controls</h2>
           <button id="stop-button"
-                  className="text-xl p-20 font-bold mb-4"
+                  className="text-white bg-red-700 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
                   onClick={stopPlayingSounds}
             >Stop All Sounds</button>
           {Object.keys(playin).map((soundPath) => (
@@ -125,7 +113,7 @@ export default function Home() {
                 <p>{soundNameMapping[soundPath]}</p>
                 <input
                   type="range"
-                  min="0"
+                  min="0.05"
                   max="1"
                   step="0.01"
                   value={volumes[soundPath] || 1}
@@ -159,49 +147,5 @@ export default function Home() {
         </div>
       </div>
     </main>
-//     <main className="flex min-h-screen flex-col items-center justify-center Bottompaddin">
-
-// <div className="w-1/4 p-4 bg-gray-200">
-//         <h2 className="text-xl font-bold mb-4">Volume Controls</h2>
-//         {Object.keys(playin).map((soundPath) => (
-//           playin[soundPath] && (
-//             <div key={soundPath} className="mb-4">
-//               <p>{soundNameMapping[soundPath]}</p>
-//               <input
-//                 type="range"
-//                 min="0"
-//                 max="1"
-//                 step="0.01"
-//                 value={volumes[soundPath] || 1}
-//                 onChange={(e) => changeVolume(soundPath, parseFloat(e.target.value))}
-//               />
-//             </div>
-//           )
-//         ))}
-//       </div>
-
-//       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex"> </div>
-//       <img src={logo} className='logo'/>
-//       <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-pink-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:pink:to-pink-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]"></div>
-
-//       <div className="flex flex-grow items-center justify-center w-full">
-//         <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-//             {sounds.length > 0 ? (
-//               sounds.map((soundItem) => (
-//                 <Button
-//                   key={soundItem.name}
-//                   onClick={() => playSound(soundItem.path, soundItem.name)}
-//                   icc={soundItem.category}
-//                   isActive={activeButtons[soundItem.path]}
-//                 >
-//                   {soundItem.name}
-//                 </Button>
-//               ))
-//             ) : (
-//               <p>No sounds available</p>
-//             )}
-//         </div>
-//       </div>
-//     </main>
   );
 }
