@@ -125,7 +125,7 @@ export default function Home() {
             )
           ))}
         </div>
-        <div className="container mx-auto py-10 h-full md:w-4/5 w-11/12 px-6">
+        <div className="container mx-auto py-10 h-full w-full px-6">
           <div className="w-full h-full rounded">
             <div className="flex flex-grow items-center justify-center w-full">
               <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
