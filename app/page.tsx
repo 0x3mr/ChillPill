@@ -96,6 +96,9 @@ export default function Home() {
   
   return (
     <main className="flex min-h-screen flex-col items-center justify-center Bottompaddin">
+      <div className="flex justify-center items-center">
+        <img src={logo} className='logo'/>
+      </div>
       <div className="flex flex-no-wrap">
         <div style={{ minHeight: '716px' }} className="w-64 absolute sm:relative bg-trasparent-800 shadow md:h-full flex-col hidden sm:flex">
           <h2 className="text-xl p-20 font-bold mb-4">Volume Controls</h2>
@@ -117,9 +120,6 @@ export default function Home() {
         </div>
         <div className="container mx-auto py-10 h-64 md:w-4/5 w-11/12 px-6">
           <div className="w-full h-full rounded">
-            <div className="flex justify-center items-center">
-              <img src={logo} className='logo'/>
-            </div>
             <div className="flex flex-grow items-center justify-center w-full">
               <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
                 {sounds.length > 0 ? (
