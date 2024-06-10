@@ -98,6 +98,8 @@ export default function Home() {
           Object.entries(prevState).map(([key, value]) => [key, false])
         )
       );
+
+      setShowVolumeControls(false);
       console.log("Stopped all playing sounds");
     }
   };
