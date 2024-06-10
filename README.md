@@ -8,7 +8,7 @@ Noor Amjad - [GitHub](https://github.com/Justxd22) / [Twitter](https://twitter.c
 Amr Abdelfattah - [GitHub](https://github.com/0x3mr) / [Twitter](https://twitter.com/an0n_amr)  
 Ahmed Shalaby - [GitHub](https://github.com/Madiocre) / [Twitter](https://twitter.com/)   
 ## What is Chill Pill
-Ditch Anxiety: Chill Pill to the Rescue!
+### Ditch Anxiety: Chill Pill to the Rescue!
 
 Chill Pill was made with primarly focus on user expereince making sure sole focus on producitivty or finishing tasks or even help sleep! with over 100+ sounds from white noise to funny noises or even cat purrs to help relax and focus on improved productivty 
 
@@ -16,7 +16,8 @@ Chill Pill is meticulously crafted with a primary focus on enhancing user experi
 
 Our intuitive UI allows for seamless navigation, enabling users to quickly find and select the perfect sound for any situation With awesome hand picked Icons. Whether you're looking to drown out distractions, create a calm work environment, or wind down after a long day, Chill Pill has you covered.
 
-Chill Pill is more than just a productivity tool—it's a comprehensive solution for enhancing focus, relaxation, and overall well-being. Discover the difference that a well-designed soundscape can make with Chill Pill! [Go to Chill Pill!!!](#Live)
+Chill Pill is more than just a productivity tool—it's a comprehensive solution for enhancing focus, relaxation, and overall well-being. Discover the difference that a well-designed soundscape can make with Chill Pill!  
+### [Go to Chill Pill!!!](#Live)
 ## File indexing and store
 ```py_stuff/index.py``` is indeed our indexing method to make and update our db stored in sound.json  
 different sounds are in different categories like: Piano, Water, Rain  
@@ -33,7 +34,8 @@ different sounds are in different categories like: Piano, Water, Rain
 ![db sample](images/mine.drawio.png)
 
 ## UI/UX
-- Using tailwind css 
+- Using tailwind css   
+  
 ![ui mockup](<images/Screenshot 2024-05-11 200048.png>)
 ![Final UI](images/Ui.png)
 
