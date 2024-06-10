@@ -45,6 +45,7 @@ interface ButtonProps {
   onClick?: () => void;
 }
 const ico_map: { [key: string]: string } = {
+  random: random,
   sound: Sound_ico,
   clouds: Cloud,
   rain: Cloud_rain,

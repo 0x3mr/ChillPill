@@ -28,7 +28,7 @@ def load_sounds():
 
 
 def get_sounds():
-    l = os.listdir(os.getcwd() + "/sounds")
+    l = os.listdir(os.getcwd() + "/public/sounds")
     for x in l:
         n = x.split(".")[0]
         if n in sounds: continue

@@ -143,6 +143,21 @@ export default function Home() {
           <div className="w-full h-full rounded">
             <div className="flex flex-grow items-center justify-center w-full">
               <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
+              <Button
+                      key='Random play'
+                      onClick={() => {
+
+                        const randomIndex = Math.floor(Math.random() * sounds.length);
+                        const path = sounds[randomIndex];
+                        playSound(sounds[randomIndex].path, sounds[randomIndex].name)
+                      
+                      
+                      }}
+                      icc="random"
+                      isActive={false}
+                    >
+                      Random Play
+              </Button>
                 {sounds.length > 0 ? (
                   sounds.map((soundItem) => (
                     <Button
