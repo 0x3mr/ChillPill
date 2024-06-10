@@ -18,6 +18,7 @@ Our intuitive UI allows for seamless navigation, enabling users to quickly find 
 
 Chill Pill is more than just a productivity tool—it's a comprehensive solution for enhancing focus, relaxation, and overall well-being. Discover the difference that a well-designed soundscape can make with Chill Pill!  
 ### [Go to Chill Pill!!!](#Live)
+### [Youtube demo](https://youtu.be/VCrHS_FHMKM)
 ## File indexing and store
 ```py_stuff/index.py``` is indeed our indexing method to make and update our db stored in sound.json  
 different sounds are in different categories like: Piano, Water, Rain  
