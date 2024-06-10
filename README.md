@@ -1,11 +1,22 @@
 # CHILL PILL
 ![chill pill](images/README-CHILLPILL-BACKGROUND.png)
 # Live
+- [chill-pill-mu.vercel.app/](https://chill-pill-mu.vercel.app/)
 - [web-02.fluffycookie.tech/chillpill/](http://web-02.fluffycookie.tech/chillpill/)
 # Authors
 Noor Amjad - [GitHub](https://github.com/Justxd22) / [Twitter](https://twitter.com/_xd222)   
 Amr Abdelfattah - [GitHub](https://github.com/0x3mr) / [Twitter](https://twitter.com/an0n_amr)  
 Ahmed Shalaby - [GitHub](https://github.com/Madiocre) / [Twitter](https://twitter.com/)   
+## What is Chill Pill
+Ditch Anxiety: Chill Pill to the Rescue!
+
+Chill Pill was made with primarly focus on user expereince making sure sole focus on producitivty or finishing tasks or even help sleep! with over 100+ sounds from white noise to funny noises or even cat purrs to help relax and focus on improved productivty 
+
+Chill Pill is meticulously crafted with a primary focus on enhancing user experience, ensuring that users can maintain productivity, complete tasks efficiently, and even improve their sleep quality. Featuring an over 100+ sounds, including white noise, Funny noises, and even soothing cat purrs, Chill Pill provides a diverse range of auditory experiences to help users relax, concentrate, and boost their productivity.
+
+Our intuitive UI allows for seamless navigation, enabling users to quickly find and select the perfect sound for any situation With awesome hand picked Icons. Whether you're looking to drown out distractions, create a calm work environment, or wind down after a long day, Chill Pill has you covered.
+
+Chill Pill is more than just a productivity tool—it's a comprehensive solution for enhancing focus, relaxation, and overall well-being. Discover the difference that a well-designed soundscape can make with Chill Pill! [Go to Chill Pill!!!](#Live)
 ## File indexing and store
 ```py_stuff/index.py``` is indeed our indexing method to make and update our db stored in sound.json  
 different sounds are in different categories like: Piano, Water, Rain  
@@ -24,19 +35,19 @@ different sounds are in different categories like: Piano, Water, Rain
 ## UI/UX
 - Using tailwind css 
 ![ui mockup](<images/Screenshot 2024-05-11 200048.png>)
+![Final UI](images/Ui.png)
 
 ## Framwork and backend
-- using node React Nextjs typescript
+- using node Nextjs typescript
 - Easier hot reloads
 - fast compile times
 - fast deploys
 - modern enough to satisfy our dev needs like handling audio
 
-## Running locally
+# Installation / Running locally
 - git clone
 - make sure u have node 18 and npm installed
 - run `npm install` on the project folder
-- `cp -r sounds public/`
 - run the app `npm run dev`
 
 ## Deploying
@@ -58,3 +69,7 @@ different sounds are in different categories like: Piano, Water, Rain
 - We already have nginx installed just copy the config from `nginx.conf` to `/etc/nginx/sites-available/default`
 - restart nginx with `sudo nginx -s reload`
 - test ur app with ur domain
+
+
+# License
+    
