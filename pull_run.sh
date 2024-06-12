@@ -1,5 +1,8 @@
 #!/usr/bin/bash
 
+# This script updates the 'ChillPill' project by pulling changes from Git,
+# installing dependencies, building the project, and restarting it with pm2.
+
 cd /home/ubuntu/ChillPill
 git pull
 npm --prefix /home/ubuntu/ChillPill install

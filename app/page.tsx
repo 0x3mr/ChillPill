@@ -14,14 +14,14 @@ interface SoundNameMapping {
 }
 
 export default function Home() {
-  const sounds = Object.values(sound);
-  const [playin, setPlayin] = useState<{ [key: string]: Howl }>({});
-  const [activeButtons, setActiveButtons] = useState<{ [key: string]: boolean }>({});
-  const [volumes, setVolumes] = useState<{ [key: string]: number }>({});
-  const [soundNameMapping, setSoundNameMapping] = useState<SoundNameMapping>({});
-  const [showVolumeControls, setShowVolumeControls] = useState(!!Object.values(playin).length); // Initial state based on playing sounds
+  const sounds = Object.values(sound); // Extract sound data from JSON
+  const [playin, setPlayin] = useState<{ [key: string]: Howl }>({}); // State for currently playing sounds
+  const [activeButtons, setActiveButtons] = useState<{ [key: string]: boolean }>({}); // State for active buttons
+  const [volumes, setVolumes] = useState<{ [key: string]: number }>({}); // State for volume levels
+  const [soundNameMapping, setSoundNameMapping] = useState<SoundNameMapping>({}); // State for sound name mappings
+  const [showVolumeControls, setShowVolumeControls] = useState(!!Object.values(playin).length); // State for showing volume controls
 
-  // Function to play sound
+  // Function to play or stop a sound
   const playSound = (soundPath: string | undefined, soundName: string) => {
     if (!soundPath) {
       console.error("Invalid soundPath:", soundPath);
@@ -79,6 +79,7 @@ export default function Home() {
     console.log("Playing", soundPath, playin, soundNameMapping);
   };
 
+  // Function to change the volume of a playing sound
   const changeVolume = (soundPath: string, volume: number) => {
     if (playin[soundPath]) {
       playin[soundPath]?.volume(volume);
@@ -89,6 +90,7 @@ export default function Home() {
     }
   };
 
+  // Function to stop all playing sounds
   const stopPlayingSounds = () => {
     if (Object.values(playin).length > 0) {
       Object.values(playin).forEach((sound) => sound?.stop());

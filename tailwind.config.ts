@@ -1,3 +1,8 @@
+// This is the Tailwind CSS configuration file.
+// It defines the content to be scanned for classes,
+// extends the default theme with customizations,
+// and specifies any additional plugins to be used.
+
 import type { Config } from "tailwindcss";
 
 const config: Config = {

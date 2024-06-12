@@ -1,3 +1,17 @@
+/**
+ * This component renders a customizable button with an icon and text.
+ * The icon displayed is determined by the `icc` prop, which maps to an icon file from the `ico_map` object.
+ *
+ * The button's appearance and behavior are also configurable via other props:
+ * - `children`: The text or elements to display inside the button.
+ * - `className`: Additional CSS classes for styling the button.
+ * - `isActive`: A boolean indicating whether the button is active, which changes its appearance.
+ * - `onClick`: A function to handle click events on the button.
+ *
+ * Example usage:
+ * <Button icc="rain" isActive={true} onClick={handleClick}>Rain</Button>
+ */
+
 import React, { useState, ReactNode } from 'react';
 import Cloud_rain from  '../icons/cloud_rain.svg';
 import Sound_ico from  '../icons/cloud_rain.svg';
@@ -59,11 +73,11 @@ const ico_map: { [key: string]: string } = {
   noise: noise,
   day: day,
   kitty: cat,
-  sand: Sound_ico, //TODO
+  sand: Sound_ico,
   forest: forest,
   Xylophone: xylophone,
   thunder: thunder,
-  cermony: Sound_ico, // TODO
+  cermony: Sound_ico,
   cars: car,
   tv: tv,
   piano: piano,
@@ -82,7 +96,7 @@ const ico_map: { [key: string]: string } = {
   wind: wind,
   clap: clapping,
   snow: snow,
-  vaccum: Sound_ico, // TODO
+  vaccum: Sound_ico,
 };
 const Button = ({ icc, children, className, onClick, isActive, ...props } : ButtonProps) => {
 
@@ -94,13 +108,11 @@ const Button = ({ icc, children, className, onClick, isActive, ...props } : Butt
           flex items-center justify-center px-4 py-2 bg-[#B8C37E]
           button ${isActive ? 'active' : 'inactive'}  text-white font-bold shadow-md hover:bg-[#9AAE6C]
         `}
-        //className={`flex items-center justify-center px-4 py-2 bg-[#B8C37E] text-white font-bold shadow-md hover:bg-[#9AAE6C]`}
         style={{
           borderRadius: '15px',
           width: 230,
           height: 60,
           marginTop: 30,
-          // boxShadow:  'inset 2px 2px 5px #292b1c, inset -5px -2px 10px #636948',
         }}
         onClick={onClick}
         {...props}>

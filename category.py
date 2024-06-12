@@ -2,20 +2,24 @@
 import json
 import os
 
+# Load the sounds
 f = open("sounds_dev.json", "r")
 xx = json.load(f)
 
-c = []
+c = []  # List to hold unique categories
+
+# Iterate through the JSON data and collect unique categories
 for i in xx:
     if xx[i]["category"] in c:
         continue
     c.append(xx[i]["category"])
 
+# Print each unique category
 for i in c:
     print(i)
 
 
-
+# Categories to be listed and checked
 # - [ ] twink
 # - [ ] noise
 # - [ ] rain
