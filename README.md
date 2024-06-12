@@ -75,4 +75,5 @@ different sounds are in different categories like: Piano, Water, Rain
 
 
 # License
-    
+Copyright (C) 2024  justxd22, 0x3mr, Madiocre
+Licensed under the GPLv3 License
